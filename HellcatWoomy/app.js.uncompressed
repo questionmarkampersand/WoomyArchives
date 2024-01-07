@@ -1127,7 +1127,7 @@ const app = function(modules) {
             window.onload = function() {
                 if (/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) window.alert('We see you are using Internet Explorer. We highly suggest you use Chrome, Firefox, or some other non-IE/Edge browser, because stuff will otherwise be broken.');
                 if (/Edge\/\d./i.test(navigator.userAgent)) window.alert('We see you are using Microsoft Edge. We highly suggest you use Chrome, Firefox, or some other non-IE/Edge browser, because stuff will otherwise be broken.');
-                if (window !== window.top || ['localhost', '149.56.113.189', '23.29.125.107', 'woomy-arras.io'].indexOf(window.location.hostname) === -1) window.location.hostname = 'woomy-arras.io';
+                if (window !== window.top || ['localhost', '149.56.113.189', '23.29.125.107', 'hellcat-woomy.onrender.com'].indexOf(window.location.hostname) === -1) window.location.hostname = 'hellcat-woomy.onrender.com';
                 if (typeof localStorage.gamemodeID === "undefined") localStorage.gamemodeID = "0";
                 let selectServer = function(selection) {
                     if (selection.length === 1) selectedServer = JSON.parse(selection);
@@ -1602,25 +1602,25 @@ const app = function(modules) {
                     // Beta-tester level 2 commands
                     window["help"] = function() {
                         logger.info("Here is a list of commands and their usages:");
-                        logger.norm(" • broadcast('message')");
-                        logger.norm(" • setColor(colorID)");
-                        logger.norm(" • setSkill(amount)");
-                        logger.norm(" • setScore(score)");
-                        logger.norm(" • setSize(size)");
-                        logger.norm(" • setTank('exportName')");
-                        logger.norm(" • setStat('statName', value)");
-                        logger.norm(" • spawnEntity('exportName', x, y, teamID, colorID, size, score)");
-                        logger.norm(" • teleport(x, y)");
-                        logger.norm(" • setChildren(amount)");
-                        logger.norm(" • setInvisible(fadeInValue, fadeOutValue, limit)");
-                        logger.norm(" • setFOV(fov)");
-                        logger.norm(" • setSpinSpeed(speed)");
-                        logger.norm(" • setEntity('exportName')");
-                        logger.norm(" • clearChildren()");
-                        logger.norm(" • setTeam(teamID)");
-                        logger.norm(" • skillSet(atk, hlt, spd, str, pen, dam, rld, rgn, shi)");
-                        logger.norm(" • rainbowSpeed(speed)");
-                        logger.norm(" • setControl(amount)");
+                        logger.norm(" Â• broadcast('message')");
+                        logger.norm(" Â• setColor(colorID)");
+                        logger.norm(" Â• setSkill(amount)");
+                        logger.norm(" Â• setScore(score)");
+                        logger.norm(" Â• setSize(size)");
+                        logger.norm(" Â• setTank('exportName')");
+                        logger.norm(" Â• setStat('statName', value)");
+                        logger.norm(" Â• spawnEntity('exportName', x, y, teamID, colorID, size, score)");
+                        logger.norm(" Â• teleport(x, y)");
+                        logger.norm(" Â• setChildren(amount)");
+                        logger.norm(" Â• setInvisible(fadeInValue, fadeOutValue, limit)");
+                        logger.norm(" Â• setFOV(fov)");
+                        logger.norm(" Â• setSpinSpeed(speed)");
+                        logger.norm(" Â• setEntity('exportName')");
+                        logger.norm(" Â• clearChildren()");
+                        logger.norm(" Â• setTeam(teamID)");
+                        logger.norm(" Â• skillSet(atk, hlt, spd, str, pen, dam, rld, rgn, shi)");
+                        logger.norm(" Â• rainbowSpeed(speed)");
+                        logger.norm(" Â• setControl(amount)");
                         logger.warn("To use any of the above commands, you need to have beta-tester level 2!");
                     };
                     window["broadcast"] = function(message, hex) {
